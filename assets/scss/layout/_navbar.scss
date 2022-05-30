@@ -1,0 +1,17 @@
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 1.25rem;
+  margin-top: 34px;
+  list-style: none;
+}
+
+.navbar li {
+  margin-left: 36px;
+}
+
+.navbar a {
+  color: $color_black;
+  text-decoration: none;
+}
