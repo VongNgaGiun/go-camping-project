@@ -7,23 +7,107 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>露營趣 - 找地點</title>
     <link rel="stylesheet" href="/assets/css/style.css" />
-    <link rel="icon" type="image/png" href="assets/image/工作區域 2.svg" />
+    <link rel="icon" type="image/png" href="assets/image/logo/favicon.svg" />
   </head>
   <body>
     <header class="header">
-      <nav class="nav">
-        <article class="nav__container">
-          <section class="nav__logo">
-            <img src="assets/image/logo_black.png" alt="logo" />
-          </section>
-          <section class="nav__navlinks">
-            <li><a href="location.html">找地點</a></li>
-            <li><a href="gear.html">找裝備</a></li>
-            <li><a href="gourmet.html">找食材</a></li>
-            <li><a href="log-in.html">會員登入</a></li>
-          </section>
-        </article>
+      <nav class="navbar">
+        <a href="index.html"
+          ><img
+            class="navbar__logo"
+            src="/assets/image/logo/logo_black.svg"
+            alt="露營趣logo"
+        /></a>
+        <ul class="navbar__link">
+          <li><a href="location.html">找地點</a></li>
+          <li><a href="gear.html">找裝備</a></li>
+          <li><a href="gourmet.html">找食材</a></li>
+          <li><a href="log-in.html">會員登入</a></li>
+        </ul>
       </nav>
+      <section class="header__text">
+        <p>找地點</p>
+        <h1>LOCATION</h1>
+      </section>
     </header>
+    <main class="location__main">
+      <article class="article01">
+        <h2>如何尋找露營地點</h2>
+        <p>
+          全臺有許多露營場地，每個地方皆有不同的特色。對於剛投入露營活動的你，可透過下面的兩個步驟，找出適合的地點唷！
+        </p>
+      </article>
+      <article class="article02">
+        <section class="article02__text">
+          <img src="/assets/image/假圖.jpg" alt="step 01" />
+          <span>step 01</span>
+          <h3>利用露營平台搜尋地點</h3>
+          <p>
+            從愛露營、露營樂等露營平台，按照地區、營地特色等條件，篩選出適合你的露營場地清單。
+          </p>
+        </section>
+        <section class="article02__list">
+          <ul>
+            <li>
+              <a href="https://www.easycamp.com.tw/"
+                ><img src="/assets/image/logo/露營樂.svg" alt="露營樂logo"
+              /></a>
+              <h4>露營樂輕鬆露營最快樂</h4>
+              <p>可按照縣市別，篩選露營區。</p>
+            </li>
+            <li>
+              <a href="https://m.icamping.app/"
+                ><img src="/assets/image/logo/愛露營.png" alt="愛營樂logo"
+              /></a>
+              <h4>愛露營30秒幫您找到優質露營區！</h4>
+              <p>可透過北中南東、離島等地理分區，篩選營區。</p>
+            </li>
+          </ul>
+        </section>
+      </article>
+      <article class="article03">
+        <section class="article03__text">
+          <img src="/assets/image/假圖.jpg" alt="step 02" />
+          <span>step 02</span>
+          <h3>確認露營地點的設備</h3>
+          <p>
+            由於露營場地的型態會影響露營裝備的選擇，初步篩選地點後，需留意各營區的海拔高度、水電及衛浴設備等規劃。
+          </p>
+        </section>
+        <section class="article03__list">
+          <ul class="article03__list__altitude">
+            <span>海拔</span>
+            <li>1,000公尺以上高海拔：日夜溫差大，注意白天防曬及夜晚保暖。</li>
+            <li>500公尺以下低海拔：適合親子同樂，留意蚊蟲叮咬。</li>
+          </ul>
+          <ul class="article03__list__campsite">
+            <span>營位</span>
+            <li>確認營位大小，避免帳篷超過營位範圍。</li>
+            <li>確認營位數，衡量場地是否會過於擁擠。</li>
+          </ul>
+          <ul class="article03__list__facility">
+            <span>設備</span>
+            <li>確認場地是否提供水電、盥洗空間、淋浴用品、公共冰箱等。</li>
+            <li>場地是否提供裝備租借，或者補給站可購買裝備及飲食。</li>
+          </ul>
+        </section>
+      </article>
+    </main>
+    <footer>
+      <img
+        class="footer__logo"
+        src="/assets/image/logo/logo_black.svg"
+        alt="露營趣logo"
+      />
+      <ul class="footer__list">
+        <li><a href="location.html">找地點</a></li>
+        <li><a href="gear.html">找裝備</a></li>
+        <li><a href="gourmet.html">找食材</a></li>
+        <li><a href="log-in.html">會員登入</a></li>
+      </ul>
+      <p class="footer__copyright">
+        <small>&copy; 2022 露營趣 版權所有</small>
+      </p>
+    </footer>
   </body>
 </html>
