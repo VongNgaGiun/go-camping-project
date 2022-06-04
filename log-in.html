@@ -7,7 +7,51 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>露營趣 - 會員登入</title>
     <link rel="stylesheet" href="/assets/css/style.css" />
-    <link rel="icon" type="image/png" href="assets/image/logo/favicon.svg" />
+    <link rel="icon" type="image/svg" href="assets/image/logo/favicon.svg" />
+    <!-- google icon -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
   </head>
-  <body></body>
+  <body>
+    <main>
+      <a href="index.html"
+        ><span class="material-symbols-outlined"> close </span></a
+      >
+      <div class="log-in__container">
+        <img
+          class="logo"
+          src="/assets/image/logo/logo_black.svg"
+          alt="露營趣logo"
+        />
+        <ol class="log-in__tab">
+          <li>登入</li>
+          <li>註冊</li>
+        </ol>
+        <section class="log-in__content">
+          <form action="#">
+            <div>
+              <label for="account">帳號</label>
+              <input type="account" id="account" name:"account"
+              placeholder="請輸入帳號">
+            </div>
+            <div>
+              <label for="password">密碼</label>
+              <input type="password" id="password" name:"password"
+              placeholder="請輸入密碼">
+            </div>
+            <input type="submit" class="button" value="登入" />
+            <a href="#">忘記密碼</a>
+          </form>
+        </section>
+      </div>
+    </main>
+    <aside>
+      <img
+        src="/assets/image/picture/adventure-1867385_1280.jpg"
+        alt="露營照片5"
+      />
+    </aside>
+  </body>
 </html>
