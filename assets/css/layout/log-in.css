@@ -12,6 +12,9 @@ main {
   top: 60px;
   font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 48;
 }
+.material-symbols-outlined:active {
+  color: #559a69;
+}
 
 .log-in__container {
   position: absolute;
@@ -32,19 +35,105 @@ main {
   display: flex;
   width: 50%;
   font-family: 'Noto Sans';
-  font-style: normal;
-  font-weight: 400;
   font-size: 36px;
   color: #301111;
+  cursor: pointer;
 }
 
 .log-in__tab li {
-  padding: 5%;
-  margin-bottom: 5%;
+  margin: 5%;
+  position: relative;
 }
 
-.log-in__tab li:hover {
-  color: #129647;
+.log-in__tab li::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: -20%;
+  left: 0;
+  background-color: #559a69;
+  transform-origin: bottom right;
+  transition: transform 0.4s ease-out;
+}
+
+.log-in__tab li:hover::before {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.log-in__content {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+
+.log-in__content__account,
+.log-in__content__password {
+  display: flex;
+  flex-direction: column;
+  margin: 5%;
+}
+
+.log-in__content__account label,
+.log-in__content__password label {
+  font-family: 'Noto Sans';
+  font-size: 36px;
+  line-height: 49px;
+  color: #301111;
+}
+
+.log-in__content__account input,
+.log-in__content__password input {
+  font-family: 'Noto Sans';
+  font-size: 24px;
+  line-height: 33px;
+  color: #301111;
+  padding: 2% 0;
+  background-color: #f3efe2;
+  border: none;
+  border-bottom: 1px solid #301111;
+}
+
+.log-in__content__account input:focus,
+.log-in__content__password input:focus {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.log-in__content__button {
+  display: flex;
+  justify-content: center;
+  margin: 5%;
+  padding: 2% 0;
+  border: none;
+  background: #559a69;
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+  font-family: 'Noto Sans';
+  font-size: 36px;
+  line-height: 49px;
+  color: #ffffff;
+  cursor: pointer;
+  transition-duration: 0.4s;
+}
+
+.log-in__content__button:hover {
+  background: #129647;
+}
+
+.log-in__content__forget-password {
+  display: flex;
+  justify-content: center;
+  margin: 2% 5%;
+  text-decoration: none;
+  font-family: 'Noto Sans';
+  font-size: 24px;
+  line-height: 33px;
+  color: #301111;
+}
+
+.log-in__content__forget-password:active {
+  color: #559a69;
 }
 
 aside img {
