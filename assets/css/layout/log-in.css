@@ -12,11 +12,12 @@ main {
   top: 60px;
   font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 48;
 }
+
 .material-symbols-outlined:active {
   color: #559a69;
 }
 
-.log-in__container {
+.container {
   position: absolute;
   top: 10%;
   width: 50%;
@@ -31,7 +32,7 @@ main {
   width: 10%;
 }
 
-.log-in__tab {
+.tab {
   display: flex;
   width: 50%;
   font-family: 'Noto Sans';
@@ -40,12 +41,12 @@ main {
   cursor: pointer;
 }
 
-.log-in__tab li {
+.tabLink {
   margin: 5%;
   position: relative;
 }
 
-.log-in__tab li::before {
+.tabLink::before {
   content: '';
   position: absolute;
   width: 100%;
@@ -58,34 +59,46 @@ main {
   transition: transform 0.4s ease-out;
 }
 
-.log-in__tab li:hover::before {
+.tabLink:hover::before {
   transform: scaleX(1);
   transform-origin: bottom left;
 }
 
-.log-in__content {
-  display: flex;
+.tabContent {
+  display: none;
   flex-direction: column;
   width: 50%;
+  animation: fadeEffect 1.5s;
+}
+@keyframes fadeEffect {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
-.log-in__content__account,
-.log-in__content__password {
+.tabContent__account,
+.tabContent__password,
+.tabContent__confirmPassword {
   display: flex;
   flex-direction: column;
   margin: 5%;
 }
 
-.log-in__content__account label,
-.log-in__content__password label {
+.tabContent__account label,
+.tabContent__password label,
+.tabContent__confirmPassword label {
   font-family: 'Noto Sans';
   font-size: 36px;
   line-height: 49px;
   color: #301111;
 }
 
-.log-in__content__account input,
-.log-in__content__password input {
+.tabContent__account input,
+.tabContent__password input,
+.tabContent__confirmPassword input {
   font-family: 'Noto Sans';
   font-size: 24px;
   line-height: 33px;
@@ -96,14 +109,16 @@ main {
   border-bottom: 1px solid #301111;
 }
 
-.log-in__content__account input:focus,
-.log-in__content__password input:focus {
+.tabContent__account input:focus,
+.tabContent__password input:focus,
+.tabContent__confirmPassword input:focus {
   background-color: rgba(255, 255, 255, 0.5);
 }
 
-.log-in__content__button {
+.tabContent__button {
   display: flex;
   justify-content: center;
+  width: 90%;
   margin: 5%;
   padding: 2% 0;
   border: none;
@@ -117,11 +132,12 @@ main {
   transition-duration: 0.4s;
 }
 
-.log-in__content__button:hover {
+.tabContent__button:hover {
   background: #129647;
 }
 
-.log-in__content__forget-password {
+.tabContent__forgetPassword,
+.tabContent__logIn {
   display: flex;
   justify-content: center;
   margin: 2% 5%;
@@ -132,7 +148,8 @@ main {
   color: #301111;
 }
 
-.log-in__content__forget-password:active {
+.tabContent__forgetPassword:active,
+.tabContent__logIn:active {
   color: #559a69;
 }
 
@@ -156,7 +173,7 @@ aside img {
     left: 90%;
   }
 
-  .log-in__container {
+  .container {
     width: 100%;
   }
 
