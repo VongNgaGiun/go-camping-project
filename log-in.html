@@ -22,11 +22,12 @@
         ><span class="material-symbols-outlined"> close </span></a
       >
       <div class="container">
-        <img
-          class="logo"
-          src="/assets/image/logo/logo_black.svg"
-          alt="露營趣logo"
-        />
+        <a href="index.html">
+          <img
+            class="logo"
+            src="/assets/image/logo/logo_black.svg"
+            alt="露營趣logo"
+        /></a>
         <!-- tab -->
         <ol class="tab">
           <li
@@ -40,38 +41,38 @@
         </ol>
         <!-- tabContent(登入) -->
         <form id="log-in" class="tabContent">
-          <div class="tabContent__account">
+          <div class="tabContent__item">
             <label for="account">帳號</label>
             <input type="account" id="account" name:"account"
             placeholder="請輸入帳號">
           </div>
-          <div class="tabContent__password">
+          <div class="tabContent__item">
             <label for="password">密碼</label>
             <input type="password" id="password" name:"password"
             placeholder="請輸入密碼">
           </div>
           <input type="submit" class="tabContent__button" value="登入" />
-          <a href="#" class="tabContent__forgetPassword">忘記密碼</a>
+          <a href="#" class="tabContent__link">忘記密碼</a>
         </form>
         <!-- tabContent(註冊) -->
         <form id="sign-up" class="tabContent">
-          <div class="tabContent__account">
+          <div class="tabContent__item">
             <label for="account">帳號</label>
             <input type="account" id="account" name:"account"
             placeholder="請輸入帳號">
           </div>
-          <div class="tabContent__password">
+          <div class="tabContent__item">
             <label for="password">密碼</label>
             <input type="password" id="password" name:"password"
             placeholder="請輸入密碼">
           </div>
-          <div class="tabContent__confirmPassword">
+          <div class="tabContent__item">
             <label for="confirm-password">確認密碼</label>
             <input type="confirm-password" id="confirm-password"
             name:"confirm-password" placeholder="請再次輸入密碼">
           </div>
           <input type="submit" class="tabContent__button" value="註冊" />
-          <a href="#" class="tabContent__logIn">登入</a>
+          <a href="log-in.html" class="tabContent__link">登入</a>
         </form>
       </div>
     </main>

@@ -28,10 +28,17 @@ main {
   flex-direction: column;
 }
 
-.logo {
-  width: 10%;
+.container a {
+  display: flex;
+  justify-content: center;
 }
 
+.logo {
+  width: 25%;
+  cursor: pointer;
+}
+
+/* tab */
 .tab {
   display: flex;
   width: 50%;
@@ -64,10 +71,13 @@ main {
   transform-origin: bottom left;
 }
 
+/* tabContent */
 .tabContent {
   display: none;
   flex-direction: column;
   width: 50%;
+  font-family: 'Noto Sans';
+  color: #301111;
   animation: fadeEffect 1.5s;
 }
 @keyframes fadeEffect {
@@ -79,39 +89,27 @@ main {
   }
 }
 
-.tabContent__account,
-.tabContent__password,
-.tabContent__confirmPassword {
+.tabContent__item {
   display: flex;
   flex-direction: column;
   margin: 5%;
 }
 
-.tabContent__account label,
-.tabContent__password label,
-.tabContent__confirmPassword label {
-  font-family: 'Noto Sans';
-  font-size: 36px;
+.tabContent__item label {
+  font-size: 32px;
   line-height: 49px;
-  color: #301111;
 }
 
-.tabContent__account input,
-.tabContent__password input,
-.tabContent__confirmPassword input {
-  font-family: 'Noto Sans';
+.tabContent__item input {
   font-size: 24px;
   line-height: 33px;
-  color: #301111;
   padding: 2% 0;
   background-color: #f3efe2;
   border: none;
   border-bottom: 1px solid #301111;
 }
 
-.tabContent__account input:focus,
-.tabContent__password input:focus,
-.tabContent__confirmPassword input:focus {
+.tabContent__item input:focus {
   background-color: rgba(255, 255, 255, 0.5);
 }
 
@@ -124,7 +122,6 @@ main {
   border: none;
   background: #559a69;
   box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
-  font-family: 'Noto Sans';
   font-size: 36px;
   line-height: 49px;
   color: #ffffff;
@@ -136,20 +133,17 @@ main {
   background: #129647;
 }
 
-.tabContent__forgetPassword,
-.tabContent__logIn {
+.tabContent__link {
   display: flex;
   justify-content: center;
   margin: 2% 5%;
   text-decoration: none;
-  font-family: 'Noto Sans';
+  color: #301111;
   font-size: 24px;
   line-height: 33px;
-  color: #301111;
 }
 
-.tabContent__forgetPassword:active,
-.tabContent__logIn:active {
+.tabContent__link:active {
   color: #559a69;
 }
 
@@ -175,6 +169,20 @@ aside img {
 
   .container {
     width: 100%;
+  }
+
+  .tab,
+  .tabContent__button {
+    font-size: 32px;
+  }
+
+  .tabContent__item label {
+    font-size: 28px;
+  }
+
+  .tabContent__item input,
+  .tabContent__link {
+    font-size: 20px;
   }
 
   aside img {
