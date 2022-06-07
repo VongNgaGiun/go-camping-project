@@ -14,3 +14,6 @@
 
 /* log-in */
 @import url('layout/log-in.css');
+
+/* forget-password */
+@import url('layout/forget-password.css');
