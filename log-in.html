@@ -51,7 +51,12 @@
             <input type="password" id="password" name:"password"
             placeholder="請輸入密碼">
           </div>
-          <input type="submit" class="tabContent__button" value="登入" />
+          <input
+            type="submit"
+            class="tabContent__button"
+            value="登入"
+            onclick="logIn()"
+          />
           <a href="forget-password.html" class="tabContent__link">忘記密碼</a>
         </form>
         <!-- tabContent(註冊) -->
@@ -71,7 +76,12 @@
             <input type="confirm-password" id="confirm-password"
             name:"confirm-password" placeholder="請再次輸入密碼">
           </div>
-          <input type="submit" class="tabContent__button" value="註冊" />
+          <input
+            type="submit"
+            class="tabContent__button"
+            value="註冊"
+            onclick="signUp()"
+          />
           <a href="log-in.html" class="tabContent__link">登入</a>
         </form>
       </div>

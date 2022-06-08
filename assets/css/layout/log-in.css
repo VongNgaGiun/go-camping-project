@@ -157,8 +157,8 @@ aside img {
   object-fit: cover;
 }
 
-/* 手機板 */
-@media (max-width: 600px) {
+/* RWD */
+@media (max-width: 768px) {
   main {
     width: 100%;
     opacity: 0.9;

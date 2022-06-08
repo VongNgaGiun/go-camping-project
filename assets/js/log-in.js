@@ -1,3 +1,4 @@
+/////////////////////切換tab的function(code來源:https://www.w3schools.com/howto/howto_js_tabs.asp)/////////////////////
 function openTab(event, tabName) {
   // Declare all variables
   var i, tabContent, tabLink;
@@ -21,3 +22,13 @@ function openTab(event, tabName) {
 
 // Get the element with id="defaultOpen" and click on it
 document.getElementById('defaultOpen').click();
+
+/////////////////////登入按鈕的alert box/////////////////////
+function logIn() {
+  alert('您已登入，將在五秒後跳轉回前頁');
+}
+
+/////////////////////註冊按鈕的alert box/////////////////////
+function signUp() {
+  alert('註冊成功，將在五秒後跳轉回登入頁');
+}
