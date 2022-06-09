@@ -43,8 +43,8 @@
         <form id="log-in" class="tabContent">
           <div class="tabContent__item">
             <label for="account">帳號</label>
-            <input type="account" id="account" name:"account"
-            placeholder="請輸入帳號">
+            <input type="text" id="account" name:"account"
+            placeholder="請輸入帳號" autofocus>
           </div>
           <div class="tabContent__item">
             <label for="password">密碼</label>
@@ -52,7 +52,7 @@
             placeholder="請輸入密碼">
           </div>
           <input
-            type="submit"
+            type="button"
             class="tabContent__button"
             value="登入"
             onclick="logIn()"
@@ -63,7 +63,7 @@
         <form id="sign-up" class="tabContent">
           <div class="tabContent__item">
             <label for="account">帳號</label>
-            <input type="account" id="account" name:"account"
+            <input type="text" id="account" name:"account"
             placeholder="請輸入帳號">
           </div>
           <div class="tabContent__item">
@@ -73,11 +73,11 @@
           </div>
           <div class="tabContent__item">
             <label for="confirm-password">確認密碼</label>
-            <input type="confirm-password" id="confirm-password"
-            name:"confirm-password" placeholder="請再次輸入密碼">
+            <input type="password" id="confirm-password" name:"confirm-password"
+            placeholder="請再次輸入密碼">
           </div>
           <input
-            type="submit"
+            type="button"
             class="tabContent__button"
             value="註冊"
             onclick="signUp()"
