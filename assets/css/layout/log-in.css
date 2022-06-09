@@ -158,7 +158,7 @@ aside img {
 @media (max-width: 768px) {
   main {
     width: 100%;
-    height: 150vh;
+    height: 300vh;
     opacity: 0.9;
   }
 
@@ -170,10 +170,15 @@ aside img {
     width: 100%;
   }
 
+  .tab,
+  .tabContent {
+    width: 80%;
+  }
+
   aside img {
     position: absolute;
     width: 100%;
-    height: 150vh;
+    height: 300vh;
     left: 0;
     top: 0;
     z-index: -1;
