@@ -42,6 +42,7 @@ main {
 /* tab */
 .tab {
   display: flex;
+  justify-content: space-evenly;
   width: 50%;
   font-family: 'Noto Sans';
   font-size: 2rem;
@@ -169,6 +170,10 @@ aside img {
 
   .container {
     width: 100%;
+  }
+
+  .tab {
+    justify-content: space-between;
   }
 
   .tab,
