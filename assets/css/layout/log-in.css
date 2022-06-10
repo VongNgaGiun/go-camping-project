@@ -107,6 +107,7 @@ main {
   background-color: #f3efe2;
   border: none;
   border-bottom: 1px solid #301111;
+  caret-color: #559a69;
 }
 
 .tabContent__item input:focus {
